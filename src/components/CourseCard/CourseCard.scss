@@ -1,0 +1,41 @@
+.CourseCard {
+  text-align: center;
+
+  &:hover {
+    .CourseCard-Title,
+    .CourseCard-Subtitle {
+      color: var(--color-primary);
+    }
+  }
+
+  &-Figure {
+    height: 275px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+
+  &-Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &-Title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+
+  &-Subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    color: #696969;
+  }
+}

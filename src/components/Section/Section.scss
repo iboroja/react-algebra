@@ -1,0 +1,51 @@
+.Section {
+  padding: 60px 24px;
+  // padding: 120px 0;
+
+  &_secondary {
+    background-color: #f6fafb;
+  }
+
+  &-Inner {
+    @media screen and (min-width: 1024px) {
+      width: 960px;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1300px) {
+      width: 1260px;
+    }
+  }
+
+  &-HelperText {
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  &-Header {
+    margin-bottom: 48px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &-Title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 36px;
+    }
+  }
+}
